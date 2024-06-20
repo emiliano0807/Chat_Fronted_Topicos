@@ -8,7 +8,6 @@ const getUsername=()=>{
     const randomUser= Math.floor(Math.random() * users.length);
     return users[randomUser];
 }
-
 let socket = io(url2,{
     auth: {
         username: getUsername(),
